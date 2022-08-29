@@ -1,11 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "./components/Home";
-import gallery from "./components/Gallery";
-import About from "./components/About";
-import Login from "./components/login";
-import edit from "./components/edit";
-import Delete from "./components/delete";
-import Registration from "./components/registration.vue";
 import menu1 from "./components/menu1.vue";
 import comment from "./components/comment.vue";
 import menu2 from "./components/menu2.vue";
@@ -13,7 +7,10 @@ import menu3 from "./components/menu3.vue";
 import phone from "./components/phone_number.vue";
 import email from "./components/email.vue";
 import detail from "./components/detail.vue";
+import verifyDetail from "./components/verifyDetail.vue";
 import address from "./components/address.vue";
+import payment from "./components/payment.vue";
+import time from "./components/time.vue";
 
 const routes = [
   {
@@ -64,42 +61,24 @@ const routes = [
     name: "address",
     component: address
   },
+  {
+    path: "/verifyDetails",
+    name: "verifyDetails",
+    component: verifyDetail
+  },
+  {
+  path: "/payment",
+  name: "payment",
+  component: payment
+},
+
+{
+  path: "/time",
+  name: "time",
+  component: time
+},
+
   
-
-
-
-
-  {
-    path: "/edit/:id",
-    name: "edit",
-    component: edit
-  },
-  {
-    path: "/delete/:id",
-    name: 'delete',
-    component: Delete
-  },
-  {
-    path: "/login",
-    name: "login",
-    component: Login
-  },
-  {
-    path: "/about",
-    name: "about",
-    component: About
-  },
-  {
-    path: "/gallery",
-    name: "gallery",
-    component: gallery
-  },
-
-  {
-    path: "/registration",
-    name: "registration",
-    component: Registration
-  },
 ];
 
 const router = createRouter({

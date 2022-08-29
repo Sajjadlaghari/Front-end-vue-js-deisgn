@@ -12,19 +12,36 @@
           <div class="row text-cener">
             <div class="col-md-3"></div>
             <div class="col-md-5">
-              <label for="">
-                <h4 class="fw-bold">Quel est ton e-mail</h4>
-              </label>
               <div>
                 <form action="" cclass="number" style="display:flex">
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <button style="border:none;background-color: #fff; border:none;" type="button">
-                        <img src="../assets/gmail.png" alt=""></button>
+                  <select name="" id="" class="p-2 mr-3"
+                    style="border:none;border-radius: 10px; margin-right:5px;width:100px;border:none;background-color:#fff">
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wednesday</option>
+                    <option value="">Thursday</option>
+                    <option value="">Friday</option>
+                    <option value="">Sturday</option>
+                    <option value="">Sunday</option>
+                  </select>
+                  <select name="" class="p-2 pl-3 pr-3" id=""
+                    style="border:none;border-radius: 10px; margin-right:5px;width:100px;border:1px solid black;background-color:#F7F7F7">
+                    <option value="">00:00</option>
+                  </select>
+                  <span style="font-weight:bold;padding-top:5px"><img src="../assets/line.png" alt=""></span>
 
-                    </div>
-                    <input type="text" class="form-control" placeholder="Email Here">
-                  </div>
+                  <select name="" class="p-2 ml-2 mr-1" id=""
+                    style="border:none;border-radius: 10px; margin-right:5px;width:100px;border:1px solid black;background-color:#F7F7F7">
+                    <option value="">00:00</option>
+                  </select>
+
+                  <select name="" class="p-2" id=""
+                    style="border:none;border-radius: 10px; margin-right:5px;width:100px;border:1px solid black;background-color: #F7F7F7;">
+                    <option value="">AM</option>
+                    <option value="">PM</option>
+
+                  </select>
+
                 </form>
               </div>
             </div>
@@ -32,7 +49,8 @@
         </div>
       </div>
     </div>
-
+    <div class="container">
+    </div>
     <div class="cotainer mr-5 mb-5" style="position:absolute;bottom:-1%;width:90%">
       <div class="row">
         <div class="col-md-11">
@@ -45,11 +63,11 @@
               <p>
               <ul class="nav-item" style="position:relative;">
                 <li>
-                  <router-link to="phone" class="nav-link left"><img src="../assets/Vector1.svg" alt="">
+                  <router-link to="/" class="nav-link left"><img src="../assets/Vector1.svg" alt="">
                   </router-link>
                 </li>
                 <li>
-                  <router-link to="detail" class="nav-link right"><img src="../assets/Vector.svg" alt=""> </router-link>
+                  <router-link to="menu1" class="nav-link right"><img src="../assets/Vector.svg" alt=""> </router-link>
                 </li>
               </ul>
               </p>
@@ -63,7 +81,7 @@
 
 <script>
 export default {
-  name: 'comment',
+  name: 'time',
   props: {
     msg: String
   }
@@ -74,13 +92,6 @@ export default {
 <style scoped>
 .cart {
   margin-top: 40px
-}
-
-.input-group {
-  border: 1px solid black;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 6px;
 }
 
 .div {
@@ -118,6 +129,7 @@ export default {
 input[type="text"] {
   border: none;
   border-radius: 30px;
+  background-color: rgb(239, 241, 243);
 }
 
 .container-fluid {
